@@ -5,3 +5,16 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 </web-app>
+ <plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-war-plugin</artifactId>
+    <version>2.3</version>
+    <executions>
+      <execution>
+         <phase>package</phase>
+         <configuration>
+           <webXml>..../WEB-INF/web.xml</webXml>
+         </configuration>
+      </execution>
+    </executions>
+  <plugin>
